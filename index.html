@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Add and Delete library books</title>
+</head>
+<body>
+    <div id="container">
+    <h1 class="title">ADD A BOOK</h1>
+    <form>
+        <p id="invalid">The entry is invalid, one or more of the fields must be empty or wrongly filled !</p>
+        <br><input type="text" id="name" placeholder="Enter the book name">
+        <br><input type="text" id="description" placeholder="Enter the book description">
+        <div id="cat">
+        <br><input type="number" id="pages" placeholder="N° pages">
+        <input type="number" id="number" placeholder="Id N°">
+        <select  id="category" value="Category">
+            <option>Category</option>
+            <option>Adventure book</option>
+            <option>Love story</option>
+            <option>Action book</option>
+            <option>Programming stuff</option>
+        </select>
+    </div>
+    <div id="buts"><input type="button" id="button" value="ADD &plus;"><input type="button" id="button" value="DELETE ALL" class="but">
+    </div>
+    </form>
+    <table id="table">
+        <tr>
+            <th>Id N°</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Number of pages</th>
+            <th>Category</th>
+            <th>Delete row</th>
+        </tr>
+        <tr>
+            <td id="id">116</td>
+            <td>Machine learning with python</td>
+            <td>A book to learn machine learning using python</td>
+            <td>600</td>
+            <td>Programming stuff</td>
+            <td><input type="button" value="Delete" id="mybutton"></td>
+        </tr>
+    </table>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
